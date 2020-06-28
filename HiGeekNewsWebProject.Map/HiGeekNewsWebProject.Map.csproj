@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HiGeekNewsWebProject.Entites\HiGeekNewsWebProject.Entites.csproj" />
+    <ProjectReference Include="..\HiGeekNewsWebProject.Kernel\HiGeekNewsWebProject.Kernel.csproj" />
+  </ItemGroup>
+
+</Project>
