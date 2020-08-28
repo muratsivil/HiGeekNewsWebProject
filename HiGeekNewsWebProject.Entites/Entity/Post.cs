@@ -15,10 +15,11 @@ namespace HiGeekNewsWebProject.Entites.Entity
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
-        public int AppUserId { get; set; }
-        public virtual AppUser AppUser { get; set; }
+        public Guid UserId { get; set; }
+        public virtual AppUser User { get; set; }
 
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Like> Likes { get; set; }
+        public virtual ICollection<Share> Shares { get; set; }
     }
 }

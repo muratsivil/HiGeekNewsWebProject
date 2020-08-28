@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Web", "HiGeekNewsWebProject.Web\HiGeekNewsWebProject.Web.csproj", "{2B1C5434-64CA-4393-9601-F30FD1B96FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Web", "HiGeekNewsWebProject.Web\HiGeekNewsWebProject.Web.csproj", "{2B1C5434-64CA-4393-9601-F30FD1B96FDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Kernel", "HiGeekNewsWebProject.Kernel\HiGeekNewsWebProject.Kernel.csproj", "{46024A12-0FF6-4ED6-BD2B-1A6B410474ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Kernel", "HiGeekNewsWebProject.Kernel\HiGeekNewsWebProject.Kernel.csproj", "{46024A12-0FF6-4ED6-BD2B-1A6B410474ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Entites", "HiGeekNewsWebProject.Entites\HiGeekNewsWebProject.Entites.csproj", "{18C11DFD-9E5C-45EA-9AF4-2AF29913E102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Entites", "HiGeekNewsWebProject.Entites\HiGeekNewsWebProject.Entites.csproj", "{18C11DFD-9E5C-45EA-9AF4-2AF29913E102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Map", "HiGeekNewsWebProject.Map\HiGeekNewsWebProject.Map.csproj", "{51914574-778A-4629-96EB-8A6DE6FE7517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Map", "HiGeekNewsWebProject.Map\HiGeekNewsWebProject.Map.csproj", "{51914574-778A-4629-96EB-8A6DE6FE7517}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.DataAccess", "HiGeekNewsWebProject\HiGeekNewsWebProject.DataAccess.csproj", "{1D4320D9-31F4-4E93-A465-869A4C19A318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Associate", "HiGeekNewsWebProject.Associate\HiGeekNewsWebProject.Associate.csproj", "{4049651E-6E83-4E90-9A01-0F09584ACF9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Business", "HiGeekNewsWebProject.Business\HiGeekNewsWebProject.Business.csproj", "{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{51914574-778A-4629-96EB-8A6DE6FE7517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51914574-778A-4629-96EB-8A6DE6FE7517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51914574-778A-4629-96EB-8A6DE6FE7517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4320D9-31F4-4E93-A465-869A4C19A318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4320D9-31F4-4E93-A465-869A4C19A318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4320D9-31F4-4E93-A465-869A4C19A318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4320D9-31F4-4E93-A465-869A4C19A318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4049651E-6E83-4E90-9A01-0F09584ACF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4049651E-6E83-4E90-9A01-0F09584ACF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4049651E-6E83-4E90-9A01-0F09584ACF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4049651E-6E83-4E90-9A01-0F09584ACF9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

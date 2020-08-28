@@ -9,10 +9,10 @@ namespace HiGeekNewsWebProject.Entites.Entity
     {
         public string Content { get; set; }
 
-        public int PostId { get; set; }
-        public virtual Post Post { get; set; }
+        public Guid UserId { get; set; }
+        public virtual AppUser User { get; set; }
 
-        public int AppUserId { get; set; }
-        public virtual AppUser AppUser { get; set; }
+        public Guid PostId { get; set; }
+        public virtual Post Post { get; set; }
     }
 }
