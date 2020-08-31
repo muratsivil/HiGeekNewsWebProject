@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using HiGeekNewsWebProject.Associate.VMs;
 using HiGeekNewsWebProject.Business.Services.Abstract;
+using HiGeekNewsWebProject.Business.UnitOfWork.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Text;

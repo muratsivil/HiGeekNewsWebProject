@@ -6,6 +6,6 @@ namespace HiGeekNewsWebProject.Associate.VMs
 {
     public class JsonShareVM
     {
-        public int share { get; set; }
+        public int Share { get; set; }
     }
 }

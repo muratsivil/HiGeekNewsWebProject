@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ImageResizer" Version="4.2.8" />
+    <PackageReference Include="ImageResizer.Plugins.DiskCache" Version="4.2.8" />
+    <PackageReference Include="ImageResizer.Plugins.PrettyGifs" Version="4.2.8" />
+    <PackageReference Include="ImageResizer.WebConfig" Version="4.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

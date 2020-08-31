@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Map", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.DataAccess", "HiGeekNewsWebProject\HiGeekNewsWebProject.DataAccess.csproj", "{1D4320D9-31F4-4E93-A465-869A4C19A318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Associate", "HiGeekNewsWebProject.Associate\HiGeekNewsWebProject.Associate.csproj", "{4049651E-6E83-4E90-9A01-0F09584ACF9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Associate", "HiGeekNewsWebProject.Associate\HiGeekNewsWebProject.Associate.csproj", "{4049651E-6E83-4E90-9A01-0F09584ACF9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Business", "HiGeekNewsWebProject.Business\HiGeekNewsWebProject.Business.csproj", "{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiGeekNewsWebProject.Business", "HiGeekNewsWebProject.Business\HiGeekNewsWebProject.Business.csproj", "{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiGeekNewsWebProject.Utility", "HiGeekNewsWebProject.Utility\HiGeekNewsWebProject.Utility.csproj", "{61E2D6C7-E6AF-48B8-811E-A18266B2A05D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E4C47DD-4C4D-4F1F-B694-16322988B2B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E2D6C7-E6AF-48B8-811E-A18266B2A05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E2D6C7-E6AF-48B8-811E-A18266B2A05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E2D6C7-E6AF-48B8-811E-A18266B2A05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E2D6C7-E6AF-48B8-811E-A18266B2A05D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

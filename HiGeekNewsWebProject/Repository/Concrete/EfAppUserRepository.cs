@@ -12,7 +12,16 @@ namespace HiGeekNewsWebProject.DataAccess.Repository.Concrete
     {
         public EfAppUserRepository(ApplicationDbContext applicationDbContext) : base(applicationDbContext)
         {
+        }
 
+        public bool CheckCredentials(string userName, string password)
+        {
+            return Any(x => x.UserName == userName && x.PasswordHash == password);
+        }
+
+        public AppUser FindByUserName(string userName)
+        {
+            return Find(x => x.UserName == userName);
         }
     }
 }

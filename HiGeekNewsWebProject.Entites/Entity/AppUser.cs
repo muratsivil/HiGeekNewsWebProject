@@ -10,9 +10,9 @@ namespace HiGeekNewsWebProject.Entites.Entity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public Roles Roles { get; set; }
 
-
-        // That part cames from KernelEntity
+        // This part cames from KernelEntity
         public DateTime CreateDate { get; set; }
         public string CreatedComputerName { get; set; }
         public string CreatedIp { get; set; }

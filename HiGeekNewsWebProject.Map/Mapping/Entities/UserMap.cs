@@ -28,6 +28,7 @@ namespace HiGeekNewsWebProject.Map.Mapping.Entities
 
             builder.Property(x => x.FirstName).IsRequired(true);
             builder.Property(x => x.LastName).IsRequired(true);
+            builder.Property(x => x.Roles).IsRequired(true);
 
             builder.HasMany(x => x.Posts)
                 .WithOne(x => x.User)
