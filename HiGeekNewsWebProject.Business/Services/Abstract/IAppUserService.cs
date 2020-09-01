@@ -7,6 +7,7 @@ namespace HiGeekNewsWebProject.Business.Services.Abstract
 {
     public interface IAppUserService
     {
+        public void UserCreate(RegisterDTO model);
         public void Add(UserDTO model);
         public void Update(UserDTO model);
         public void Delete(Guid id);

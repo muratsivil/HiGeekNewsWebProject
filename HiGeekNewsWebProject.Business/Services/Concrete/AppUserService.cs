@@ -26,7 +26,12 @@ namespace HiGeekNewsWebProject.Business.Services.Concrete
             this._mapper = mapper;
             this._webHostEnvironment = webHostEnvironment;
         }
-
+        public void UserCreate(RegisterDTO model)
+        {
+            AppUser appUser = _mapper.Map<AppUser>(model);
+            _unitOfWork.User.Add(appUser);
+            _unitOfWork.SaveChange();
+        }
         public void Add(UserDTO model)
         {
             if (model.Image != null)

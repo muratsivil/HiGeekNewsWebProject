@@ -1,48 +1,723 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+
+<!DOCTYPE html>
+<html class="no-js">
+
+<!-- Mirrored from teothemes.com/html/Aruna/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Sep 2020 17:47:44 GMT -->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HiGeekNewsWebProject.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/slider.css">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <link rel="stylesheet" href="~/assets/css/jquery.selectBoxIt.css">
+    <link rel="stylesheet" href="~/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="~/assets/fileupload/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="~/assets/fileupload/css/jquery.fileupload-ui.css">
+    <link rel="stylesheet" href="~/assets/css/jquery.tagsinput.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <script src="~/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script>
+    (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../../../connect.facebook.net/en_US/all.js#xfbml=1&appId=225987124123858";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HiGeekNewsWebProject.Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="top-ten">
+                                <div class="activator">
+                                    <div class="left">
+                                        <span class="small">Top</span>
+                                        <span class="small">All</span>
+                                        <span class="small">Time</span>
+                                    </div>
+                                    <div class="right">5</div>
+                                </div>
+                                <div class="drop-down">
+                                    <div class="post-list">
+                                        <article>
+                                            <figure>
+                                                <img src="~/assets/img/top1.jpg" alt="" />
+                                                <figcaption>01</figcaption>
+                                            </figure>
+                                            <div class="text">
+                                                <h3><a href="post.html">Helping the elderly is not fun...</a></h3>
+                                                <span class="date">25.04</span>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <figure>
+                                                <img src="~/assets/img/top2.jpg" alt="" />
+                                                <figcaption>02</figcaption>
+                                            </figure>
+                                            <div class="text">
+                                                <h3>
+                                                    <a href="post.html">
+                                                        People Cherising New Year's Eve
+                                                    </a>
+                                                </h3>
+                                                <span class="date">25.04</span>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <figure>
+                                                <img src="~/assets/img/top3.jpg" alt="" />
+                                                <figcaption>03</figcaption>
+                                            </figure>
+                                            <div class="text">
+                                                <h3><a href="post.html">Inappropriate jokes are alway...</a></h3>
+                                                <span class="date">23.04</span>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <figure>
+                                                <img src="~/assets/img/top4.jpg" alt="" />
+                                                <figcaption>04</figcaption>
+                                            </figure>
+                                            <div class="text">
+                                                <h3><a href="post.html">The Law</a></h3>
+                                                <span class="date">22.04</span>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <figure>
+                                                <img src="~/assets/img/top5.jpg" alt="" />
+                                                <figcaption>05</figcaption>
+                                            </figure>
+                                            <div class="text">
+                                                <h3><a href="post.html">Helping the elderly is not fun...</a></h3>
+                                                <span class="date">25.04</span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="navbar-brand" href="index-2.html">
+                                <img src="~/assets/img/logo.png" alt="Aruna - Image Sharing, Gag, Meme Theme" />
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Privacy">privacy</a></li>
+                                        <li><a href="index3.html">Homepage with big right sidebar</a></li>
+                                        <li><a href="index4.html">Homepage big masonry</a></li>
+                                        <li><a href="index5.html">Homepage with masonry and sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="category.html">Category page</a></li>
+                                        <li><a href="post.html">Single post page</a></li>
+                                        <li><a href="profile.html">User profile page</a></li>
+                                        <li><a href="settings.html">Settings page</a></li>
+                                        <li><a href="widgets.html">Widgets page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Popular</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Contact</a>
+                                            <ul>
+                                                <li><a href="#">Our People</a></li>
+                                                <li class="has-dropdown">
+                                                    <a href="#">Our Address</a>
+                                                    <ul>
+                                                        <li><a href="#">Google Maps</a></li>
+                                                        <li><a href="#">Text Address</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Our Emails</a></li>
+                                                <li><a href="#">Job Offerings</a></li>
+                                                <li><a href="#">Communication</a></li>
+                                                <li><a href="#">Communication</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Shortcodes</a></li>
+                                        <li><a href="#">Feeatures</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-container">
+                            <div class="user-box">
+                                <a href="#">
+                                    <figure>
+                                        <img src="~/assets/img/user-box.png" alt="" />
+                                    </figure>
+                                    <span class="name">teothemes</span>
+                                </a>
+                                <div class="drop-down">
+                                    <div class="counters-line">
+                                        <div class="half"><span class="counter">321k</span><span class="desc">kudos</span></div>
+                                        <div class="half"><span class="counter">42</span><span class="desc">posts</span></div>
+                                    </div>
+                                    <div class="buttons-line">
+                                        <a href="#" class="btn btn-primary btn-block custom-button">Post Fun</a>
+                                        <a href="settings.html" class="btn btn-primary btn-block custom-button">Profile & Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <a href="#" class='share'>share</a>
+                                <ul class="drop-down">
+                                    <li class="twitter"><a target="_blank" href="http://twitter.com/teothemes">twitter</a></li>
+                                    <li class="dribble"><a target="_blank" href="http://dribbble.com/teothemes">dribble</a></li>
+                                    <li class="googleplus"><a target="_blank" href="http://plus.google.com/">googleplus</a></li>
+                                    <li class="evernote"><a target="_blank" href="http://evernote.com/">evernote</a></li>
+                                    <li class="facebook"><a target="_blank" href="http://facebook.com/teothemes">facebook</a></li>
+                                    <li class="linkedin"><a target="_blank" href="http://linkedin.com/">linkedin</a></li>
+                                    <li class="stumbleupon"><a target="_blank" href="http://www.stumbleupon.com/">stumbleupon</a></li>
+                                    <li class="vimeo"><a target="_blank" target="_blank" href="http://vimeo.com/">vimeo</a></li>
+                                    <li class="pinterest"><a target="_blank" href="http://pinterest.com/">pinterest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    <section id="main" role="main">
         <div class="container">
-            &copy; 2020 - HiGeekNewsWebProject.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            @RenderBody()
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>About</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <figure class="footer-logo">
+                                <a href="index-2.html"><img src="~/assets/img/footer-logo.png" alt="" /></a>
+                            </figure>
+                            <p>
+                                Aruna is a theme developed by
+                                <a href="http://teothemes.com/" title="WordPress themes">TeoThemes</a>. It is an image
+                                sharing, fun,social theme for the ones
+                                looking forsome fun! It also has
+                                incredible features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div class="footer-widget">
+                        <h2>Funny stuff this week</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <div class="post-preview">
+                                <div class="left">
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="~/assets/img/footer-img-small01.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="~/assets/img/footer-img-small02.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="left">
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="~/assets/img/footer-img-small02.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="~/assets/img/footer-img-small01.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="right">
+                                    <figure class="big">
+                                        <a href="post.html">
+                                            <img src="~/assets/img/footer-img-big01.jpg" alt="" />
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <div class="footer-widget">
+                        <h2>Best footer widget award</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <a href="#" class="btn btn-primary btn-block custom-button">Press this button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    <a href="#" class="scroll-top">&nbsp;</a>
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-top-menu">
+                        <div class="half">
+                            <button class="btn btn-link btn-block active-ind" rel="register-window">Register new account</button>
+                        </div>
+                        <div class="half">
+                            <button class="btn btn-link btn-block" rel="login-window">Login</button>
+                        </div>
+                    </div>
+                    <div class="modal-window register-window">
+                        <div class="row">
+                            <div class="col-sm-7 border-right">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Email:</span>
+                                    <input type="text" class="form-control" value="teothemes@gmail.com">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Username:</span>
+                                    <input type="text" class="form-control" value="loginteothemes">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Password:</span>
+                                    <input type="password" class="form-control" value="password">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Repeat Password:</span>
+                                    <input type="password" class="form-control" value="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="vertical-half">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check1" checked />
+                                        <label for="check1">GAGS OF THE WEEK</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check2" />
+                                        <label for="check2">NEWSLETTER</label>
+                                    </div>
+                                </div>
+                                <div class="vertical-half">
+                                    <div class="custom-checkbox-vertical custom-checkbox">
+                                        <p>I promise only to have fun here and I fully agree with the</p>
+                                        <input type="checkbox" value="check1" name="check" id="agreeTerms" />
+                                        <label for="agreeTerms">Terms of Agreement.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input id="register-button" type="submit" value="NICE, REGISTER ME!" class="btn btn-primary btn-block custom-button" />
+                            <a id="error-button" class="btn btn-block btn-info custom-button" href="#">WHY DON’T YOU AGREE WITH OUR ToA?</a>
+                        </div>
+                    </div>
+                    <div class="modal-window login-window">
+                        <div class="half-horizontal">
+                            <div class="input-group">
+                                <span class="input-group-addon">Username:</span>
+                                <input type="text" class="form-control" value="loginteothemes">
+                            </div>
+                        </div>
+                        <div class="half-horizontal">
+                            <div class="input-group">
+                                <span class="input-group-addon">Password:</span>
+                                <input type="password" class="form-control" value="password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-block btn-info custom-button" href="#">CAN'T LOGIN YET</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-top-wrap">
+                        <div class="half">
+                            <div class="append">Type</div>
+                            <select name="test" id="myCombobox">
+                                <option value="window-slider">Slider Post</option>
+                                <option value="window-video">Video Post</option>
+                                <option value="window-quote">Quote Post</option>
+                                <option value="window-image">Image Post</option>
+                            </select>
+                        </div>
+                        <div class="half category-combobox">
+                            <select name="test" id="categoryCombobox">
+                                <option class="blue-background" value="SelectBoxIt is:" rel="#348dd1">Category #Obama Stuff</option>
+                                <option class="red-background" value="a jQuery Plugin" rel="#d5aa27">Category #Lolcats</option>
+                                <option class="green-background" value="a Select Box Replacement" rel="#38c574">Category #Tuts</option>
+                                <option class="purple-background" value="a Stateful UI Widget" rel="#7e00ff">Category #Obama Stuff</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="post-window window-video">
+                        <div class="window-left">
+                            <textarea class="form-control" rows="3" placeholder="Post title"></textarea>
+                            <input type="text" class="form-control" placeholder="Paste your link here (Youtube, Vimeo)" value="http://vimeo.com/25924530" />
+                            <figure>
+                                <div class="video-wrap">
+                                    <iframe width="560" height="315" src="http://www.youtube.com/embed/wdX8y_xkz14" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </figure>
+                        </div>
+                        <aside>
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check7" checked />
+                                        <label for="check7">NSFW</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check8" />
+                                        <label for="check8">COMMENTS</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check9" />
+                                        <label for="check9">ANONYMOUS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-wrap">
+                                <h3>Tags:</h3>
+                                <input name="tags" class="tags-selector" value="awesome,comic,lolcat" />
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="post-window window-quote">
+                        <div class="window-left">
+                            <textarea class="form-control quote-input" rows="3" placeholder="“Edit this quote, use smart things!”"></textarea>
+                            <div class="upload-wrap">
+                                <span class="btn btn-success fileinput-button">
+                                    <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                    <span>NOT A MUST</span><br /><br />
+                                    <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                    <!-- The file input field used as target for the file upload widget -->
+                                    <input class="fileupload-init" type="file" name="files[]" rel="files-qoute">
+                                </span>
+                                <div id="files-qoute" class="files"></div>
+                            </div>
+                        </div>
+                        <aside>
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check13" checked />
+                                        <label for="check13">NSFW</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check14" />
+                                        <label for="check14">COMMENTS</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check15" />
+                                        <label for="check15">ANONYMOUS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-wrap">
+                                <h3>Tags:</h3>
+                                <input name="tags" class="tags-selector" value="awesome,comic,lolcat" />
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="post-window window-image">
+                        <div class="window-left">
+                            <textarea class="form-control" rows="3" placeholder="Post title"></textarea>
+                            <div class="upload-wrap">
+                                <span class="btn btn-success fileinput-button">
+                                    <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                    <span>NOT A MUST</span><br /><br />
+                                    <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                    <!-- The file input field used as target for the file upload widget -->
+                                    <input class="fileupload-init" type="file" name="files[]" rel="files-photos">
+                                </span>
+                                <div id="files-photos" class="files"></div>
+                            </div>
+                        </div>
+                        <aside>
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check16" checked />
+                                        <label for="check16">NSFW</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check17" />
+                                        <label for="check17">COMMENTS</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check18" />
+                                        <label for="check18">ANONYMOUS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-wrap">
+                                <h3>Tags:</h3>
+                                <input name="tags" class="tags-selector" value="awesome,comic,lolcat" />
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="post-window window-slider">
+                        <div class="window-left small-padding">
+                            <div class="slider-numbers">
+                                <ul>
+                                    <li><a href="#" rel="window-1" class="active">1</a></li>
+                                    <li><a href="#" rel="window-2">2</a></li>
+                                    <li><a href="#" rel="window-3">3</a></li>
+                                    <li><a href="#" rel="window-4">4</a></li>
+                                    <li><a href="#" rel="window-5">5</a></li>
+                                    <li><a href="#" rel="window-6">6</a></li>
+                                    <li><a href="#" rel="window-7">7</a></li>
+                                    <li><a href="#" rel="window-8">8</a></li>
+                                    <li><a href="#" rel="window-9">9</a></li>
+                                    <li><a href="#" rel="window-10">10</a></li>
+                                </ul>
+                            </div>
+                            <div class="slider-selector">
+                                <div class="window-1 slider-selector-window">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #1 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider1">
+                                        </span>
+                                        <div id="files-slider1" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-2 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #2 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider2">
+                                        </span>
+                                        <div id="files-slider2" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-3 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #3 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider3">
+                                        </span>
+                                        <div id="files-slider3" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-4 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #4 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider4">
+                                        </span>
+                                        <div id="files-slider4" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-5 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #5 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider5">
+                                        </span>
+                                        <div id="files-slider5" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-6 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #6 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider6">
+                                        </span>
+                                        <div id="files-slider6" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-7 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #7 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider7">
+                                        </span>
+                                        <div id="files-slider7" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-8 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #8 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider8">
+                                        </span>
+                                        <div id="files-slider8" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-9 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #9 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider9">
+                                        </span>
+                                        <div id="files-slider9" class="files"></div>
+                                    </div>
+                                </div>
+                                <div class="window-10 slider-selector-window window-hide">
+                                    <textarea class="form-control" rows="3" placeholder="How about a title?"></textarea>
+                                    <input class="form-control" placeholder="Slider #10 title" />
+                                    <div class="upload-wrap">
+                                        <span class="btn btn-success fileinput-button">
+                                            <span class="purple">OPTIONALLY BROWSE IMAGE</span><br />
+                                            <span>NOT A MUST</span><br /><br />
+                                            <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+                                            <!-- The file input field used as target for the file upload widget -->
+                                            <input class="fileupload-init" type="file" name="files[]" rel="files-slider10">
+                                        </span>
+                                        <div id="files-slider10" class="files"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <aside>
+                            <div class="outer">
+                                <div class="inner">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check10" checked />
+                                        <label for="check10">NSFW</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check11" />
+                                        <label for="check11">COMMENTS</label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="check1" name="check" id="check12" />
+                                        <label for="check12">ANONYMOUS</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-wrap">
+                                <h3>Tags:</h3>
+                                <input name="tags" class="tags-selector" value="awesome,comic,lolcat" />
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="modal-bottom-menu">
+                        <div class="half">
+                            <button class="btn btn-link btn-block">Post It / Upload</button>
+                        </div>
+                        <div class="half">
+                            <button class="btn btn-link btn-block alternate-btn">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scripts">
+        <script src="~/assets/js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="~/assets/js/vendor/jquery-ui.min.js"></script>
+        <script src="~/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="~/assets/js/vendor/jquery.flexslider-min.js"></script>
+        <script src="~/assets/js/vendor/jquery.selectBoxIt.min.js"></script>
+        <script src="~/assets/js/vendor/jquery.mCustomScrollbar.min.js"></script>
+        <script src="~/assets/js/vendor/jquery.mousewheel.min.js"></script>
+        <script src="~/assets/fileupload/js/vendor/jquery.ui.widget.js"></script>
+        <script src="~/assets/js/vendor/jquery.tagsinput.min.js"></script>
+        <script src="~/assets/fileupload/js/jquery.iframe-transport.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload-process.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload-image.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload-audio.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload-video.js"></script>
+        <script src="~/assets/fileupload/js/jquery.fileupload-validate.js"></script>
+        <script src="~/assets/js/main.js"></script>
+        <script src="~/assets/js/retina-1.1.0.min.js"></script>
+        <script src="~/assets/js/jquery.lazyload.min.js"></script>
+
+    </div>
 </body>
+
 </html>
+
+
+
+

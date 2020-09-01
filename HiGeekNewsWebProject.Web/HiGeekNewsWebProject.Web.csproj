@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HiGeekNewsWebProject.Business\HiGeekNewsWebProject.Business.csproj" />
     <ProjectReference Include="..\HiGeekNewsWebProject\HiGeekNewsWebProject.DataAccess.csproj" />
   </ItemGroup>
 
